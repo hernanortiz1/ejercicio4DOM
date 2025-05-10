@@ -27,3 +27,10 @@ main {
   box-shadow: 0 1px 10px gray;
   background-color: #131313;
 }
+
+.contenedorHora{
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 1px 10px gray;
+  background-color: #131313;
+}
