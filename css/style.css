@@ -9,7 +9,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 main {
@@ -27,10 +26,25 @@ main {
   box-shadow: 0 1px 10px gray;
   background-color: #131313;
 }
-
-.contenedorHora{
+.contenedorFecha,
+.contenedorHora {
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 1px 10px gray;
   background-color: #131313;
+}
+
+@media (max-width: 767px) {
+  .contenedorPrincipal,
+  .contenedorFecha,
+  .contenedorHora {
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+  }
+
+   .display-1,
+  .display-4 {
+    font-size: 2rem;
+  }
 }
