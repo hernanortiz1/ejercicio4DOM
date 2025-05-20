@@ -31,7 +31,7 @@ Este proyecto consiste en una página web que muestra un reloj digital en tiempo
 1. Clonar el repositorio:
 
    ```bash
-   git clone https://github.com/hernanortiz1/ejercicio3DOM.git
+   git clone https://github.com/hernanortiz1/ejercicio4DOM.git
    ```
 2. Ejecutar el archivo en el navegador y probar la funcionalidad.
 
