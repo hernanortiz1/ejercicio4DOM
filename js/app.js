@@ -30,31 +30,26 @@ const obtenerReloj = () => {
     mes[fecha.getMonth()]
   } del  ${fecha.getFullYear()}`;
 
+  //   horas
 
-
-//   horas
- 
   let horas = fecha.getHours();
   const minutos = fecha.getMinutes();
   const segundos = fecha.getSeconds();
   const ampm = horas >= 12 ? "PM" : "AM";
 
-
   horas = horas % 12;
-  horas = horas ? horas : 12; 
+  horas = horas ? horas : 12;
 
   const horasStr = horas.toString().padStart(2, "0");
   const minutosStr = minutos.toString().padStart(2, "0");
   const segundosStr = segundos.toString().padStart(2, "0");
 
-
-   const spanHoraMinuto = document.querySelector(".display-1");
+  const spanHoraMinuto = document.querySelector(".display-1");
   spanHoraMinuto.textContent = `${horasStr} : ${minutosStr} :`;
 
- 
   const spansFs4 = document.querySelectorAll(".fs-4");
-  spansFs4[0].textContent = ampm;         
-  spansFs4[1].textContent = segundosStr;  
+  spansFs4[0].textContent = ampm;
+  spansFs4[1].textContent = segundosStr;
 };
 
 setInterval(obtenerReloj);
